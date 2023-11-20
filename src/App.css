@@ -27,6 +27,17 @@
 .App-link {
   color: #97ca3f;
 }
+.NoTodosMessage{
+  font-size: 38px;
+  font-weight: bold;
+  color: #00a2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+}
 
 @keyframes App-logo-spin {
   from {

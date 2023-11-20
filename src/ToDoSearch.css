@@ -1,0 +1,97 @@
+/* Make the input responsive, center content, and add more styles */
+input {
+    width: calc(100% - 40px);
+    max-width: 480px;
+    margin: 20px auto;
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    caret-color: #00000018;
+    /* Add more styles as needed */
+  }
+  input:focus{
+    outline: none;
+    mask-type: alpha;
+    
+    border-color: #00a2ffa2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.725);
+    animation: inputAnimation 0.1s ease-in-out forwards; /* Add "forwards" to keep the last keyframe state */
+  }
+input[type="checkbox"]{
+    margin-right: 10px;
+}
+input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+input[type="checkbox"]:focus{
+    outline: none;
+}
+input[type="checkbox"]:checked + label{
+    text-decoration: line-through;
+    color: #888;
+}
+input[type="checkbox"]:checked + label:hover{
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label:focus{
+    outline: none;
+}
+input[type="checkbox"]:checked + label::before{
+    content: "✔";
+    margin-right: 10px;
+    color: #00a2ff;
+}
+input[type="checkbox"]:checked + label::after{
+    content: "";
+    margin-right: 10px;
+    color: #00a2ff;
+}
+input[type="checkbox"]:not(:checked) + label::before{
+    content: "✖";
+    margin-right: 10px;
+    color: #00a2ff;
+}
+input[type="checkbox"]:not(:checked) + label::after{
+    content: "";
+    margin-right: 10px;
+    color: #00a2ff;
+}
+input[type="checkbox"]:disabled + label{
+    color: #888;
+}
+input[type="checkbox"]:disabled + label::before{
+    content: "✖";
+    margin-right: 10px;
+    color: #888;
+}
+input[type="checkbox"]:disabled + label::after{
+    content: "";
+    margin-right: 10px;
+    color: #888;
+}
+input[type="checkbox"]:disabled + label:hover{
+    cursor: not-allowed;
+}
+input[type="checkbox"]:disabled + label:focus{
+    outline: none;
+}
+input[type="checkbox"]:disabled + label::before{
+    content: "✖";
+    margin-right: 10px;
+    color: #888;
+}
+@keyframes inputAnimation {
+    0% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

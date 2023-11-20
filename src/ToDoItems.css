@@ -1,0 +1,66 @@
+/* Improved and responsive ToDoItems.css */
+
+.TodoItem {
+  background-color: #fafafa;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px auto;
+  box-shadow: 0px 5px 20px rgba(32, 35, 41, 0.1);
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.TodoItem-p {
+  margin: 12px 0;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 20px;
+  font-weight: 400;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.TodoItem-p--complete {
+  text-decoration: line-through;
+  color: #888;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.Icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.Icon-check {
+  margin-right: 16px;
+}
+
+.Icon-check:hover {
+  color: #4caf50;
+}
+
+.Icon-check--active {
+  color: #4caf50;
+}
+
+.Icon-delete {
+  margin-left: 16px;
+}
+
+.Icon-delete:hover {
+  color: red;
+}
