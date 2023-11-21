@@ -1,0 +1,39 @@
+/* App.css or your custom CSS file */
+
+/* ... (existing styles) */
+
+.DarkModeToggle {
+  margin: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  width: 50px;
+    outline: none;
+}
+
+.DarkModeToggle:hover {
+  background-color: #45a049;
+}
+
+.DarkModeToggle.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.DarkModeToggle.dark:hover {
+  background-color: #555;
+}
+
+.DarkModeToggle.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.DarkModeToggle.light:hover {
+  background-color: #f2f2f2;
+}
